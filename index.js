@@ -4,7 +4,7 @@ const calcVolume = document.getElementById("calc-volume")
 const calcMass = document.getElementById("calc-mass")
 
 function conversion() {
-    let userInputValue = userInput.value
+    const userInputValue = userInput.value
     const meterResult = userInputValue * 3.28084
     const feetResult = userInputValue * 0.3048
     const literResult = userInputValue * 0.219969
