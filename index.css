@@ -10,7 +10,8 @@ html, body {
 
 .top-half {
     max-width: 550px;
-    height: 260px;
+    padding: 30px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
