@@ -87,12 +87,19 @@ input::-webkit-inner-spin-button {
     font-size: 1rem;
 }
 
-.footer {
+#footer {
     color: #fff;
     text-align: center;
 }
 
-.footer a {
+#footer a {
     color: #fff;
     font-weight: bold;
+}
+
+#footer a:hover {
+    cursor: pointer;   
+    background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
+    font-size: 1.05rem;
+    transition: 0.3s ease-in-out;
 }
