@@ -3,23 +3,29 @@
         <link rel="stylesheet" href="index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container">
             <div class="top-half">
-                <p class="title">Metric/Imperial unit conversion</p>
-                <input class="input" id="user-input" onchange="conversion()" type="number" placeholder="0">
+                <p class="title">Metric / Imperial Unit Conversion</p>
+                <input class="input" id="user-input" type="number" placeholder="0">
             </div>
             <div class="bottom-half">
-                <p class="calc-type">Length (Meter/Feet)</p>
-                <p id="calc-length" class="calc-result">1 meters = 3.281 feet | 1 feet = 0.305 meters</p>
-                <p class="calc-type">Volume (Liters/Gallons)</p>
-                <p id="calc-volume" class="calc-result">1 liters = 0.220 gallons | 1 gallons = 0.305 liters</p>
-                <p class="calc-type">Mass (Kilograms/Pounds)</p>
-                <p id="calc-mass" class="calc-result">1 kilos = 2.205 pounds | 1 pounds = 0.454 kilos</p>
+                <p class="calc-type">Length (Meters/ Feet)</p>
+                <p id="calc-length" class="calc-result">0 <strong>meters</strong> = 0.000 <strong>feet</strong> | 0 <strong>feet</strong> = 0 .000 <strong>meters</strong></p>
+                <hr>
+                <p class="calc-type">Volume (Liters/ Gallons)</p>
+                <p id="calc-volume" class="calc-result">0 <strong>liters</strong> = 0.000 <strong>gallons</strong>  | 0 <strong>gallons</strong> = 0.000 <strong>liters</strong></p>
+                <hr>
+                <p class="calc-type">Mass (Kilograms/ Pounds)</p>
+                <p id="calc-mass" class="calc-result">0 <strong>kilos</strong> = 0.000 <strong>pounds</strong> | 0 <strong>pounds</strong> = 0.000 <strong>kilos</strong> </p>
             </div>
         <div>
+
+            <div class="footer">
+                <p>2022 All Rights Reserved | <a href="https:github.com/kencodest" target="_blank">kencodest</a></p>
+            </div>
         <script src="index.js"></script>
     </body>
 </html>

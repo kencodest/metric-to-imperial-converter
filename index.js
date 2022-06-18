@@ -3,14 +3,21 @@ const calcLength = document.getElementById("calc-length")
 const calcVolume = document.getElementById("calc-volume")
 const calcMass = document.getElementById("calc-mass")
 
+const metersToFeet = 3.28084
+const feetToMeters = 0.3048
+const litersToGallons = 0.219969
+const gallonToLiters = 4.54609
+const kilosToPounds = 2.20462
+const poundsToKilos = 0.453592
+
 function conversion() {
     const userInputValue = userInput.value
-    const meterResult = userInputValue * 3.28084
-    const feetResult = userInputValue * 0.3048
-    const literResult = userInputValue * 0.219969
-    const gallonResult = userInputValue * 4.54609
-    const kiloResult = userInputValue * 2.20462
-    const poundResult = userInputValue * 0.453592
+    const meterResult = userInputValue * metersToFeet
+    const feetResult = userInputValue * feetToMeters
+    const literResult = userInputValue * litersToGallons
+    const gallonResult = userInputValue * gallonToLiters
+    const kiloResult = userInputValue * kilosToPounds
+    const poundResult = userInputValue * poundsToKilos
     
     calcLength.textContent = `${userInputValue} meters = ${meterResult.toFixed(3)} feet | ${userInputValue} feet = ${feetResult.toFixed(3)} meters`
     
@@ -18,3 +25,5 @@ function conversion() {
     
     calcMass.textContent = `${userInputValue} kilos = ${kiloResult.toFixed(3)} pounds | ${userInputValue} pounds = ${poundResult.toFixed(3)} kilos`
 }
+
+userInput.addEventListener("keyup", conversion)

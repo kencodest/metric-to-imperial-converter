@@ -1,28 +1,40 @@
-html, body {
-    max-width: 550px;
-    height: 550px;
-    padding: 0;
-    margin: 0 auto;;
-    font-family: 'Inter';
-    text-align: center;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito';
     background-color: #1B2330;
 }
 
-.top-half {
+hr {
+    width: 80%;
+    color: #1F2937;
+    margin: 0;
+    height: 1px;
+}
+
+.container {
     max-width: 550px;
-    padding: 30px;
-    padding-bottom: 50px;
+    max-height: 100vh;
+    margin: 1.5rem auto;
+}
+
+.top-half {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
     align-items: center;
     background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    border-radius: 10px 10px 0 0;
+    
 }
 
 .bottom-half {
-    max-width: 550px;
-    height: 290px;
+    max-height: 50vh;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -32,43 +44,55 @@ html, body {
     color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-radius: 0 0 10px 10px;
 }
 
 .title {
-    font-size: 26px;
-    font-weight: normal;
+    font-size: 1.6rem;
+    font-weight: bold;
     color: #fff;
     font-weight: 800;
-    font-size: 22px;
-    margin-bottom: 0px;
 }
 
 .input {
     height: 80px;
-    width: 140px;
-    font-style: normal;
+    width: 30%;
+    font-style: inherit;
     font-weight: 800;
     font-size: 50px;
     text-align: center;
     background-color: #1F2937;
     color: #fff;
-    border: 2px solid;
-    border-radius: 10%;
-    margin-top: 35px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
 }
 
+/* The ::-webkit-inner-spin-button CSS pseudo-element is used to style the inner part of the spinner button of number 
+* picker input elements.
+*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
+
 .calc-type {
-    font-size: 14x;
     font-weight: bold;
-    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .calc-result {
-    font-size: 14px;
+    font-size: 1rem;
+}
+
+.footer {
+    color: #fff;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    font-weight: bold;
 }
