@@ -111,6 +111,7 @@ input::-webkit-inner-spin-button {
  {
     .input {
         padding: .5em;
+        width: 50%;
         text-align: center;
         font-size: 2em;
     }
