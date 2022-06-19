@@ -3,27 +3,27 @@ const calcLength = document.getElementById("calc-length")
 const calcVolume = document.getElementById("calc-volume")
 const calcMass = document.getElementById("calc-mass")
 
-const metersToFeet = 3.28084
-const feetToMeters = 0.3048
-const litersToGallons = 0.219969
-const gallonToLiters = 4.54609
+const metresToFeet = 3.28084
+const feetToMetres = 0.3048
+const litresToGallons = 0.219969
+const gallonToLitres = 4.54609
 const kilosToPounds = 2.20462
 const poundsToKilos = 0.453592
 
 function conversion() {
     const userInputValue = userInput.value
-    const meterResult = userInputValue * metersToFeet
-    const feetResult = userInputValue * feetToMeters
-    const literResult = userInputValue * litersToGallons
-    const gallonResult = userInputValue * gallonToLiters
+    const metreResult = userInputValue * metresToFeet
+    const feetResult = userInputValue * feetToMetres
+    const litreResult = userInputValue * litresToGallons
+    const gallonResult = userInputValue * gallonToLitres
     const kiloResult = userInputValue * kilosToPounds
     const poundResult = userInputValue * poundsToKilos
     
-    calcLength.textContent = `${userInputValue} meters = ${meterResult.toFixed(3)} feet | ${userInputValue} feet = ${feetResult.toFixed(3)} meters`
+    calcLength.innerHTML = `${userInputValue} <strong>metres</strong> = ${metreResult.toFixed(3)} <strong>feet</strong> | ${userInputValue} <strong>feet</strong> = ${feetResult.toFixed(3)} <strong>meters</strong>`
     
-    calcVolume.textContent = `${userInputValue} liters = ${literResult.toFixed(3)} gallons | ${userInputValue} gallons = ${feetResult.toFixed(3)} liters`
+    calcVolume.innerHTML = `${userInputValue} <strong>litres</strong> = ${litreResult.toFixed(3)} <strong>gallons</strong> | ${userInputValue} <strong>gallons</strong> = ${gallonResult.toFixed(3)} <strong>litres</strong>`
     
-    calcMass.textContent = `${userInputValue} kilos = ${kiloResult.toFixed(3)} pounds | ${userInputValue} pounds = ${poundResult.toFixed(3)} kilos`
+    calcMass.innerHTML = `${userInputValue} <strong>kilos</strong> = ${kiloResult.toFixed(3)} <strong>pounds</strong> | ${userInputValue} <strong>pounds</strong> = ${poundResult.toFixed(3)} <strong>kilos</strong>`
 }
 
 userInput.addEventListener("keyup", conversion)
