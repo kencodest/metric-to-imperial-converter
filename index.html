@@ -1,29 +1,36 @@
-<html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <div class="top-half">
-                <p class="title">Metric / Imperial Unit Conversion</p>
-                <input class="input" id="user-input" type="number" placeholder="0">
-            </div>
-            <div class="bottom-half">
-                <p class="calc-type">Length (Meters/ Feet)</p>
-                <p id="calc-length" class="calc-result">0 <strong>meters</strong> = 0.000 <strong>feet</strong> | 0 <strong>feet</strong> = 0 .000 <strong>meters</strong></p>
-                <hr>
-                <p class="calc-type">Volume (Liters/ Gallons)</p>
-                <p id="calc-volume" class="calc-result">0 <strong>liters</strong> = 0.000 <strong>gallons</strong>  | 0 <strong>gallons</strong> = 0.000 <strong>liters</strong></p>
-                <hr>
-                <p class="calc-type">Mass (Kilograms/ Pounds)</p>
-                <p id="calc-mass" class="calc-result">0 <strong>kilos</strong> = 0.000 <strong>pounds</strong> | 0 <strong>pounds</strong> = 0.000 <strong>kilos</strong> </p>
-            </div>
-        <div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>Metric Converter</title>
+</head>
+<body>
+    <div class="container">
 
-            <div id="footer"></div>
-        <script src="index.js"></script>
-    </body>
+        <div class="top-half">
+            <p class="title">Metric / Imperial Unit Conversion</p>
+            <input class="input" id="user-input" type="number" placeholder="0">
+        </div>
+
+        <div class="bottom-half">
+            <p class="calc-type">Length (Metres/ Feet)</p>
+            <p id="calc-length" class="calc-result">0 <strong>meters</strong> = 0.000 <strong>feet</strong> | 0 <strong>feet</strong> = 0 .000 <strong>meters</strong></p>
+            <hr>
+            <p class="calc-type">Volume (Litres/ Gallons)</p>
+            <p id="calc-volume" class="calc-result">0 <strong>litres</strong> = 0.000 <strong>gallons</strong>  | 0 <strong>gallons</strong> = 0.000 <strong>litres</strong></p>
+            <hr>
+            <p class="calc-type">Mass (Kilograms/ Pounds)</p>
+            <p id="calc-mass" class="calc-result">0 <strong>kilos</strong> = 0.000 <strong>pounds</strong> | 0 <strong>pounds</strong> = 0.000 <strong>kilos</strong> </p>
+    </div>
+    </div>
+    <div id="footer"></div>
+    <script src="index.js"></script>
+</body>
 </html>

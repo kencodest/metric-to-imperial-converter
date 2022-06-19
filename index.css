@@ -5,46 +5,46 @@
 body {
     font-family: 'Nunito';
     background-color: #1B2330;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
 }
 
 hr {
-    width: 80%;
+    width: 85%;
     color: #1F2937;
     margin: 0;
-    height: 1px;
 }
 
 .container {
-    max-width: 550px;
-    max-height: 100vh;
-    margin: 1.5rem auto;
+    max-width: 800px;
 }
 
 .top-half {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     justify-content: center;
     align-items: center;
     background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
+    padding: 1.5em;
+    padding-bottom: 2em;
     border-radius: 10px 10px 0 0;
     
 }
 
 .bottom-half {
-    max-height: 50vh;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     justify-content: center;
     align-items: center;
-    background-color: #1F2937;
+    background-color: #151d27;
     color: #fff;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: .8em;
+    padding-bottom: 1em;
     border-radius: 0 0 10px 10px;
+    text-align: center;
 }
 
 .title {
@@ -52,20 +52,21 @@ hr {
     font-weight: bold;
     color: #fff;
     font-weight: 800;
+    text-align: center;
 }
 
 .input {
-    height: 80px;
     width: 30%;
+    padding: .2em;;
     font-style: inherit;
     font-weight: 800;
-    font-size: 50px;
+    font-size: 2.5rem;
     text-align: center;
     background-color: #1F2937;
     color: #fff;
     border: none;
     border-radius: 20px;
-    margin-top: 30px;
+    margin-top: .6em;
 }
 
 /* The ::-webkit-inner-spin-button CSS pseudo-element is used to style the inner part of the spinner button of number 
@@ -99,7 +100,29 @@ input::-webkit-inner-spin-button {
 
 #footer a:hover {
     cursor: pointer;   
-    background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
+    color: #d1e4fc;
     font-size: 1.05rem;
     transition: 0.3s ease-in-out;
 }
+
+
+@media screen and (max-width:700px)
+ {
+    .input {
+        padding: .3em .5em;
+        font-size: 2em;
+    }
+
+    .calc-type {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+    .calc-result {
+        font-size: .9rem;
+    }
+
+}
+
+
+

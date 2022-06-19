@@ -31,3 +31,4 @@ userInput.addEventListener("keyup", conversion)
 const date = new Date()
 const year = date.getFullYear()
 document.getElementById('footer').innerHTML = `<p>${year} All Rights Reserved | <a href="https://github.com/kencodest/metric-to-imperial-converter" target="_blank">kencodest</a></p>`
+

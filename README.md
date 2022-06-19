@@ -1,1 +1,1 @@
-This is a simple web app which converts from metric units to imperial units.
+This is a simple web app which converts metric units to imperial units.
